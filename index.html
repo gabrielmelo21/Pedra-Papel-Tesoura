@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Jock Ken Po</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+  <script rel='javascript' src='JS/jogo.js'></script> 
+  <link rel='stylesheet' href="css/estilo.css">
+  
+  
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+        
+        .circle {
+            border-radius: 50%;
+            box-shadow: black;
+        }
+        
+        .img {
+            border-radius: 10px;
+            box-shadow: 1px 1px 1px 1px silver;
+            transition: ease-in .3s;
+        }
+        
+        .img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+
+    </br>
+
+    <div class='conteiner'>
+        <div class="row">
+            <div class='col-sm-3 col-lg-3 col-md-3 thumbnail'>
+                <center>
+                    <img src='https://lh3.googleusercontent.com/ogw/ADea4I5WLlgGdIjuPJEPRKRPQK5lWagVmM_8qBlHT3RCKkg=s192-c-mo' width="150" class='circle'>
+                    <h4>Gabriel</h4>
+                    <h2>Pontos <span id="pontos1"></span></h2>
+                </center>
+
+            </div>
+
+
+            <div class='col-sm-6 col-lg-6 col-md-6 '>
+
+
+                <div class="thumbnail">
+                    <center>
+                        Matchs<br>
+                        <h5 id='matchs'></h5>
+
+                        <h1 id='status'><b><i></i></b></h1>
+                    </center>
+
+                </div>
+
+
+                <div class="thumbnail" id='campo'>
+
+                    <div style="width: 40%; display: inline-block;">
+                        <center>
+                            <span id='result1' style="margin-top:20%;"></span>
+                        </center>
+
+                    </div>
+                    <div style="width: 10%; display: inline-block;">VS</div>
+                    <div style="width: 40%; display: inline-block;">
+                        <center><span id='result2' style="margin-top:20%;"></span></center>
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+
+
+
+
+
+            <div class='col-sm-3 col-lg-3 col-md-3 thumbnail'>
+                <img src='https://image.flaticon.com/icons/png/512/1547/1547183.png' width="150" class='circle'>
+                <h4>Robot</h4>
+                <h2>Pontos <span id="pontos2"></span></h2>
+            </div>
+        </div>
+    </div>
+
+    <center>
+
+        <hr>
+        <div style="display: inline-block;padding:10;border-radius: 10px;box-shadow: 1px 1px 1px silver;">
+            <a href="#" id='papel'><img src='pedra-papel-tesoura/papel.png' class='img' width='90' height='100'></a>
+            <a href="#" id='pedra'><img src='pedra-papel-tesoura/pedra.png' class='img' width='90' height='100'></a>
+            <a href="#" id='tesoura'><img src='pedra-papel-tesoura/tesoura.png' class='img' width='90' height='100'></a>
+        </div>
+
+    </center>
+ 
+</body>
+
+</html>
